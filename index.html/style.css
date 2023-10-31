@@ -5,14 +5,12 @@
     box-sizing: border-box;
     font-family: 'Titillium Web', sans-serif;
 }
-
 :root{
     --gray-800: #1E293B;
     --gray-600: #475569;
 }
-
 / 1 rem = 2 px /
-/ 40px = 2,5 rem */
+/ 40px = 2,5 rem /
 header {
     background-image: url(imagens/img.svg);
     background-size: cover;
@@ -25,18 +23,33 @@ header {
 main{
     padding-inline: 1.5rem;
 }
-
 .decricao{
     margin-bottom: 2.5rem;
 }
-
 .descricao h1{
     color: var(--gray-800);
     margin-bottom: 1rem;
     font-size: 1.5625rem;
 }
-
 .decricao p{
     font-size: 0.8125rem;
     color: var(--gray-600);
 }
+
+.input-box{
+    display: flex;
+    flex-direction:column ;
+}
+
+.input-box div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login label{
+    font-size: 0.875rem;
+    color: var(--gray-800);
+    font-weight: 600;
+}
+
+/ nome da cor rgb, rgba, hex, hls, hwb */
