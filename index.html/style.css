@@ -1,3 +1,4 @@
+/* reset do css */
 {
     margin: 0;
     padding: 0;
@@ -5,15 +6,28 @@
     font-family: 'Titillium Web', sans-serif;
 }
 
-/ 1 rem = 2 px /
-/ 40px = 2,5 rem */
-header {
-    background-image: url(imagens/logo.svg);
-    background-image: url(imagens/img.svg);
-    background-size: cover;
-    height: 8.375rem;
+:root{
+    --gray-800: #1E293B;
+}
 
+/ 1 rem = 2 px /
+/ 40px = 2,5 rem /
+header {
+@@ -16,4 +20,16 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+    margin-bottom: 3.7rem;
+}
+
+main{
+    padding-inline: 1.5rem;
+}
+
+.decricao{
+    color: var(--gray-800);
+    margin-bottom: 1rem;
+}
+
+/ nome da cor rgb, rgba, hex, hls, hwb */
