@@ -8,26 +8,35 @@
 
 :root{
     --gray-800: #1E293B;
+    --gray-600: #475569;
 }
 
 / 1 rem = 2 px /
-/ 40px = 2,5 rem /
+/ 40px = 2,5 rem */
 header {
-@@ -16,4 +20,16 @@ header {
+    background-image: url(imagens/img.svg);
+    background-size: cover;
+    height: 8.375rem;
     display: flex;
     justify-content: center;
     align-items: center;
-}
     margin-bottom: 3.7rem;
 }
-
 main{
     padding-inline: 1.5rem;
 }
 
 .decricao{
-    color: var(--gray-800);
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
 }
 
-/ nome da cor rgb, rgba, hex, hls, hwb */
+.descricao h1{
+    color: var(--gray-800);
+    margin-bottom: 1rem;
+    font-size: 1.5625rem;
+}
+
+.decricao p{
+    font-size: 0.8125rem;
+    color: var(--gray-600);
+}
