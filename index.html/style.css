@@ -97,38 +97,38 @@ main{
     font-weight: 700;
     font-size: 1rem;
 }
-
 .bg-desktop{
     display: none;
 }
-
 @media(min-whidth: 1000px) {
-
     body{
         display: flex;
     }
-
     header {
         background: none;
         justify-content: flex-start;
         padding-inline: 7rem;
+        margin: 2.5rem 7rem 7rem;
+
+        height: fit-content;
     }
 
     header img{
         width: 10rem;
     }
+
     main {
         padding-inline: 7rem;
+        margin-inline: 7rem;
+        max-width: 24rem;
     }
 
     .conteudo{
         width: 100%;
     }
-
     .bg-desktop{
         display: block;
         width: 100%;
     }
 }
-
 /* nome da cor rgb, rgba, hex, hls, hwb */
