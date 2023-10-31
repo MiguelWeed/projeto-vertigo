@@ -14,7 +14,6 @@
     --ligth-purple: #9f67ff;
     --white: #fff;
 }
-
 /* 1 rem = 2 px */
 /* 40px = 2,5 rem */
 header {
@@ -102,27 +101,25 @@ main{
 .bg-desktop{
     display: none;
 }
-
 .login button:hover{
     background: var(--ligth-purple);
     transition: 0.3s;
     cursor: pointer;
 }
-
 @media(min-whidth: 1000px) {
 
     body{
         display: flex;
+        height: 100vh;
     }
+
     header {
         background: none;
         justify-content: flex-start;
         margin: 2.5rem 7rem 7rem;
-
         height: fit-content;
         max-width: 24rem;
     }
-
     header img{
         width: 10rem;
     }
@@ -131,26 +128,28 @@ main{
         max-width: 24rem;
         padding: 0;
     }
-
     .conteudo{
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
     .bg-desktop{
         display: block;
         width: 100%;
     }
 
+    .bg-desktop img{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
     .descricao h1{
         font-size: 2.25rem;
     }
-
     .decricao p{
         font-size: 1rem;
     }
 }
-
 /* nome da cor rgb, rgba, hex, hls, hwb */
