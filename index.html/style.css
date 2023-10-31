@@ -1,5 +1,5 @@
 /* reset do css */
-{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,8 +13,8 @@
     --purple: #7c3aed;
     --white: #fff;
 }
-/ 1 rem = 2 px /
-/ 40px = 2,5 rem */
+/* 1 rem = 2 px */
+/* 40px = 2,5 rem */
 header {
     background-image: url(imagens/img.svg);
     background-size: cover;
@@ -78,7 +78,6 @@ main{
 .login a:hover{
     text-decoration: underline;
 }
-
 .login button{
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -91,12 +90,26 @@ main{
     font-weight: 700;
     color: var(--white);
 }
-
 .login > p{
     color: var(--gray-600);
 }
-
 .login > p a{
     font-weight: 700;
     font-size: 1rem;
 }
+@media(min-whidth: 1000px) {
+    header {
+        background: none;
+        justify-content: flex-start;
+    }
+
+    header img{
+        width: 10rem;
+    }
+
+    main {
+        padding-inline: 7rem;
+    }
+}
+
+/* nome da cor rgb, rgba, hex, hls, hwb */
