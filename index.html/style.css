@@ -11,8 +11,10 @@
     --gray-400: #94a3b8;
     --gray-200: #e2e8f0;
     --purple: #7c3aed;
+    --ligth-purple: #9f67ff;
     --white: #fff;
 }
+
 /* 1 rem = 2 px */
 /* 40px = 2,5 rem */
 header {
@@ -100,35 +102,55 @@ main{
 .bg-desktop{
     display: none;
 }
+
+.login button:hover{
+    background: var(--ligth-purple);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
 @media(min-whidth: 1000px) {
+
     body{
         display: flex;
     }
     header {
         background: none;
         justify-content: flex-start;
-        padding-inline: 7rem;
         margin: 2.5rem 7rem 7rem;
 
         height: fit-content;
+        max-width: 24rem;
     }
 
     header img{
         width: 10rem;
     }
-
     main {
-        padding-inline: 7rem;
         margin-inline: 7rem;
         max-width: 24rem;
+        padding: 0;
     }
 
     .conteudo{
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+
     .bg-desktop{
         display: block;
         width: 100%;
     }
+
+    .descricao h1{
+        font-size: 2.25rem;
+    }
+
+    .decricao p{
+        font-size: 1rem;
+    }
 }
+
 /* nome da cor rgb, rgba, hex, hls, hwb */
